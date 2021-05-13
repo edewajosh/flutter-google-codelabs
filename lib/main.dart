@@ -42,22 +42,28 @@ class _RandonWordsState extends State<RandonWords> {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text('Drawer Header', style: TextStyle(fontSize: 24.0, color: Colors.white, fontFamily: 'Font2')),
+              child: Text('Drawer Header',
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    color: Colors.white,
+                  )),
             ),
             ListTile(
               title: Text("Item one"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
-              onTap: (){},
+              onTap: () {},
             ),
             ListTile(
               title: Text("Item Two"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
-              onTap: (){},
+              onTap: () {},
             ),
             ListTile(
               title: Text("Item Three"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
-              onTap: (){},
+              onTap: () {
+                Navigator.pop(context);
+              },
             ),
           ],
         ),
