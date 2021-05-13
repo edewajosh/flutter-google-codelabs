@@ -59,7 +59,7 @@ class _RandonWordsState extends State<RandonWords> {
               onTap: () {},
             ),
             ListTile(
-              title: Text("Item Three"),
+              title: Text("Item Three", ),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.pop(context);
