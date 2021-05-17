@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
+import 'package:startup_namer/firstroute.dart';
+import 'package:startup_namer/secondroute.dart';
 
 void main() => runApp(MyApp());
 
@@ -51,15 +53,27 @@ class _RandonWordsState extends State<RandonWords> {
             ListTile(
               title: Text("Item one"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                );
+              },
             ),
             ListTile(
               title: Text("Item Two"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FirstRoute()),
+                );
+              },
             ),
             ListTile(
-              title: Text("Item Three", ),
+              title: Text(
+                "Item Three",
+              ),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.pop(context);
