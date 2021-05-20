@@ -51,7 +51,12 @@ class _RandonWordsState extends State<RandonWords> {
                   )),
             ),
             ListTile(
-              title: Text("Item one"),
+              title: Text(
+                "Item 1",
+                style: TextStyle(
+                  fontFamily: 'OpenSans'
+                ),
+              ),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.push(
@@ -61,7 +66,17 @@ class _RandonWordsState extends State<RandonWords> {
               },
             ),
             ListTile(
-              title: Text("Item Two"),
+              title: Text("Item 2"),
+              trailing: Icon(Icons.arrow_forward_ios_outlined),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FirstRoute()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text("Item 3"),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.push(
@@ -72,13 +87,14 @@ class _RandonWordsState extends State<RandonWords> {
             ),
             ListTile(
               title: Text(
-                "Item Three",
+                "Item 4",
               ),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
+            
           ],
         ),
       ),

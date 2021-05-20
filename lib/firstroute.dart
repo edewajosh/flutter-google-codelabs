@@ -15,7 +15,7 @@ class _FirstRouteState extends State<FirstRoute> {
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text("Open ROute"),
+          child: Text("Open Ruute"),
           onPressed: () {
             Navigator.pop(context);
           },
