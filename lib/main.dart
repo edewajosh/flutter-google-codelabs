@@ -51,7 +51,12 @@ class _RandonWordsState extends State<RandonWords> {
                   )),
             ),
             ListTile(
-              title: Text("Item 1"),
+              title: Text(
+                "Item 1",
+                style: TextStyle(
+                  fontFamily: 'OpenSans'
+                ),
+              ),
               trailing: Icon(Icons.arrow_forward_ios_outlined),
               onTap: () {
                 Navigator.push(

@@ -14,7 +14,12 @@ class _SecondRouteState extends State<SecondRoute> {
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text("Go back"),
+          child: Text(
+            "Go back",
+            style: TextStyle(
+              fontFamily: 'OpenSans'
+            ),
+          ),
           onPressed: () {
             Navigator.pop(context);
           },
